@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/dark.css" id="theme">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <!-- <link rel="icon" href="./assets/coding-icons/code (1).png"> -->
+    <script src="https://kit.fontawesome.com/07776bf57a.js" crossorigin="anonymous"></script>
+    <title>Shivaji Laware Portfolio</title>
+</head>
+
+<body>
+    <header id="header" style="justify-content: center;text-align: center;">
+        <div class="typewriter">
+            <div class="typing-wrapper">
+                <h2 style="font-size: 2rem; ">HELLO!!</h2>
+                <h2 style="font-size: 4rem; color: white;">MEET</h2>
+                <h2 style="font-size: 5rem;">SHIVAJI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LAWARE</h2>
+
+                <h2 id="typing-animation" style="color:white; white-space: nowrap;"></h2>
+            </div>
+
+            <p style="color: white; margin-top: 50px; font-size: 2rem;font-weight: bold;">A Backend Developer
+                extraordinaire, shaping digital landscapes with innovation and precision.</p>
+
+            <a href="./assets/Shivaji_Laware_Backend_Developer.pdf" class="call-to-action" download>Resume</a>
+
+            <br><br>
+
+            <button class="call-to-action"><a href="#contact">Work with me</a></button>
+        </div>
+        <script>
+            // JavaScript code for typing animation
+            const typingAnimationElement = document.getElementById('typing-animation');
+            const typingTexts = ['Engineer  ', 'Coder   ', 'Innovator  '];
+            function playTypingAnimation(text) {
+                for (let i = 0; i < text.length; i++) {
+                    setTimeout(() => {
+                        typingAnimationElement.textContent += text[i];
+                    }, i * 200);
+                }
+                setTimeout(() => {
+                    typingAnimationElement.textContent = '';
+                    playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                }, text.length * 200);
+            }
+            playTypingAnimation(typingTexts[0]);
+        </script>
+        <nav class="header-menu">
+            <ul class="list">
+                <li class="list-item-container"><i class="fa fa-house list-icon"></i></i><a class="list-item"
+                        href="#header">Home</a></li>
+                <li class="list-item-container"><i class="fa-regular fa-user list-icon"></i><a class="list-item"
+                        href="#about">About</a></li>
+                <li class="list-item-container"><i class="fa-solid fa-laptop-code list-icon"></i><a class="list-item"
+                        href="#projects">Projects</a></li>
+                <li class="list-item-container"><i class="fa-solid fa-icons list-icon"></i><a class="list-item"
+                        href="#social">Social</a></li>
+                <li class="list-item-container"><i class="fa-solid fa-message list-icon"></i><a class="list-item"
+                        href="#contact">Contact</a></li>
+
+            </ul>
+        </nav>
+
+        <nav class="mobile-header-menu">
+            <div class="hamburger-menu">
+                <div class="burger bar"></div>
+            </div>
+            <ul class="mobile-list">
+                <li class="mobile-list-item-container"><i class="fa fa-house mobile-list-icon"></i><a
+                        class="mobile-list-item" href="#header">Home</a></li>
+                <li class="mobile-list-item-container"><i class="fa-regular fa-user mobile-list-icon"></i><a
+                        class="mobile-list-item" href="#about">About</a></li>
+                <li class="mobile-list-item-container"><i class="fa-solid fa-laptop-code mobile-list-icon"></i><a
+                        class="mobile-list-item" href="#projects">Projects</a></li>
+                <li class="mobile-list-item-container"><i class="fa-solid fa-icons mobile-list-icon"></i><a
+                        class="mobile-list-item" href="#social">Social</a></li>
+                <li class="mobile-list-item-container"><i class="fa-solid fa-message mobile-list-icon"></i><a
+                        class="mobile-list-item" href="#contact">Contact</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <button class="back-to-top"><a href="#header"><i class="fa-solid fa-arrow-up"></i></a></button>
+        <section class="about wrapper" id="about">
+            <h2>About&nbsp;&nbsp;&nbsp; Me</h2>
+            <div class="about-section">
+                <div class="my-image">
+                    <img src="./assets/shiva-profile.png" alt="Picture of Shivaji Laware">
+                </div>
+                <div class="about-text">
+                    <p>
+
+                        "Versatile backend maestro with around 3 years of experience at TCS, excelling in Python Flask, Java Spring Boot,
+                        Database and Angular.
+
+                        <br><br>
+                        Recognized for crafting innovative, cost-reductive, timesaving solutions that led to a 40%
+                        increase in system efficiency.
+
+                        <br><br>
+                        A customer-focused, performance-driven professional delivering impactful solutions.
+                        <br><br>
+                        Eager to bring coding finesse and dynamic collaboration to a team that values creativity as the
+                        key to success..!!!"
+
+                    </p>
+                </div>
+            </div>
+            <br><br><br><br>
+
+            <h2>Tech &nbsp;&nbsp;&nbsp; Stack</h2>
+            <div class="tech-content" style="display: flex; flex-direction: columns; padding-left: 50px;">
+                <div class="tech">
+                    <img src="./assets/coding-icons/icon_backend.png" alt="Back-end icon" class="tech-icon">
+                    <p>Back-End</p>
+                </div>
+
+                <div class="tech">
+                    <img src="./assets/coding-icons/icon-microservice.png" alt="Microservice icon" class="tech-icon">
+                    <p>Microservice</p>
+                </div>
+
+                <div class="tech">
+                    <img src="./assets/coding-icons/icon_rset_apis.png" alt="REST API's" class="tech-icon">
+                    <p>REST API's</p>
+                </div>
+                <div class="tech">
+                    <img src="./assets/coding-icons/icon_python.png" alt="Python icon" class="tech-icon">
+                    <p>Python</p>
+                </div>
+                <div class="tech">
+                    <img src="./assets/coding-icons/icon_flask.png" alt="Falsk icon" class="tech-icon">
+                    <p>Flask</p>
+                </div>
+                <div class="tech">
+                    <img src="./assets/coding-icons/icon_java.png" alt="Java icon" class="tech-icon">
+                    <p>Java</p>
+                </div>
+                <div class="tech">
+                    <img src="./assets/coding-icons/icon_spring.png" alt="Spring Boot icon" class="tech-icon">
+                    <p>Spring Boot</p>
+                </div>
+
+                <div class="tech">
+                    <img src="./assets/coding-icons/icon_sql.png" alt="SQL icon" class="tech-icon">
+                    <p>SQL</p>
+                </div>
+
+
+                <div class="tech">
+                    <img src="./assets/coding-icons/icon_postman.svg" alt="Postman icon" class="tech-icon">
+                    <p>Postman</p>
+                </div>
+
+                <div class="tech">
+                    <img src="./assets/coding-icons/icon_angular.png" alt="Angular icon" class="tech-icon">
+                    <p>Angular</p>
+                </div>
+
+                <div class="tech">
+                    <img src="./assets/coding-icons/317755_badge_html_html5_achievement_award_icon.png" alt="HTML5 icon"
+                        class="tech-icon">
+                    <p>HTML</p>
+                </div>
+
+                <div class="tech">
+                    <img src="./assets/coding-icons/317756_badge_css_css3_achievement_award_icon.png" alt="CSS3 icon"
+                        class="tech-icon">
+                    <p>CSS</p>
+                </div>
+
+                <div class="tech">
+                    <img src="./assets/coding-icons/icon_javascript.png" alt="JavaScript icon" class="tech-icon">
+                    <p>JavaScript</p>
+                </div>
+
+                <div class="tech">
+                    <img src="./assets/coding-icons/287725_github_icon.png" alt="Git icon" class="tech-icon">
+                    <p>Git</p>
+                </div>
+
+                <div class="tech">
+                    <img src="./assets/coding-icons/icon_bibucket.png" alt="Bitbucket icon" class="tech-icon">
+                    <p>Bitbucket</p>
+                </div>
+
+                <div class="tech">
+                    <img src="./assets/coding-icons/icon_openshift.png" alt="Openshif icon" class="tech-icon">
+                    <p>Openshif</p>
+                </div>
+
+                <div class="tech">
+                    <img src="./assets/coding-icons/azure.png" alt="Azure icon" class="tech-icon">
+                    <p>Azure</p>
+                </div>
+
+            </div>
+            <br><br><br><br>
+
+
+            <h2>Tools &nbsp;&nbsp;&nbsp; Used</h2>
+            <div class="tech-content" style="display: flex; flex-direction: columns; padding-left: 50px;">
+                <div class="tech">
+                    <img src="./assets/coding-icons/icon_vscode.png" alt="VS Code icon" class="tech-icon">
+                    <p>VS Code</p>
+                </div>
+
+                <div class="tech">
+                    <img src="./assets/coding-icons/icon_eclipse.png" alt="Eclipse icon" class="tech-icon">
+                    <p>Eclipse</p>
+                </div>
+
+                <div class="tech">
+                    <img src="./assets/coding-icons/icon_pycharm.png" alt="PyCharm" class="tech-icon">
+                    <p>PyCharm</p>
+                </div>
+                <div class="tech">
+                    <img src="./assets/coding-icons/icon_intellij-idea.svg" alt="Intellij IDEA
+                    icon" class="tech-icon">
+                    <p>Intellij IDEA </p>
+                </div>
+                <div class="tech">
+                    <img src="./assets/coding-icons/287725_github_icon.png" alt="Git Bash/GUI
+                    icon" class="tech-icon">
+                    <p>Git Bash/GUI </p>
+                </div>
+                <div class="tech">
+                    <img src="./assets/coding-icons/icon_bibucket.png" alt="Bitcucket
+                    icon" class="tech-icon">
+                    <p>Bitcucket </p>
+                </div>
+                <div class="tech">
+                    <img src="./assets/coding-icons/icon_openshift.png" alt="Openshift
+                    icon" class="tech-icon">
+                    <p>Openshift </p>
+                </div>
+                <div class="tech">
+                    <img src="./assets/coding-icons/icon_postman.svg" alt="Postman
+                    icon" class="tech-icon">
+                    <p>Postman </p>
+                </div>
+                <div class="tech">
+                    <img src="./assets/coding-icons/icon_swagger.svg" alt="Swagger/OpenAPI
+
+                    icon" class="tech-icon">
+                    <p>Swagger/OpenAPI </p>
+                </div>
+                <div class="tech">
+                    <img src="./assets/coding-icons/icon_postgresql.svg" alt="PostgreSQL/pgAdmin
+
+                    icon" class="tech-icon">
+                    <p>PostgreSQL/pgAdmin
+                    </p>
+                </div>
+                <div class="tech">
+                    <img src="./assets/coding-icons/icon_ssms.png" alt="SSMS
+                    icon" class="tech-icon">
+                    <p>SSMS </p>
+                </div>
+
+            </div>
+
+
+
+            <section class="projects wrapper" id="experience">
+                <h2>Experience &nbsp;&nbsp;&nbsp;</h2>
+                <div style="display: flex;justify-content: center;gap: 20px;">
+                    <h3 style="font-size: 24px;">TATA CONSULTANCY SERVICES (TCS) (3 Years)</h3>
+                    <div>
+                        <img src="./assets/coding-icons/tcs_logo.svg" alt="SSMS
+                icon" class="tech-icon" style=" width: 15rem;">
+                    </div>
+                </div>
+
+                <div class="project-list">
+                    <div class="project exp-1">
+                        <div class="project-info">
+                            <h3 style="font-size: 24px ;color: rgb(195, 105, 255);">Python Backend Developer (TCS).</h3>
+                            <ul>
+                                <li>
+                                    <p>Successfully improved system performance by 40%, implementing strategic
+                                        enhancements in Python Flask backend APIs. This resulted in faster response
+                                        times and enhanced overall system efficiency.</p>
+                                </li>
+                                <li>
+                                    <p>Spearheaded innovative solutions for an e-commerce client, creating a backend
+                                        system for visualizing parcel terminals and trips. Utilized Angular to develop a
+                                        responsive frontend, resulting in a streamlined user experience and increased
+                                        client satisfaction.</p>
+                                </li>
+                                <li>
+                                    <p>Designed and managed a complex API system capable of efficiently processing and
+                                        handling data from four different countries, demonstrating a keen understanding
+                                        of diverse datasets and ensuring seamless cross-border operations.</p>
+                                </li>
+                                <li>
+                                    <p>Innovated a slot-timing allocation system for truck trailer trips, optimizing
+                                        both inbound and outbound logistics. This achievement resulted in a smooth
+                                        workflow, minimizing waiting times, and enhancing overall operational
+                                        efficiency.</p>
+                                </li>
+                                <li>
+                                    <p>Demonstrated expertise in code deployment and maintenance, guaranteeing the
+                                        reliability and performance of deployed solutions.</p>
+                                </li>
+                                <li>
+                                    <p>Implemented continuous improvement strategies, leading to the identification and
+                                        elimination of bottlenecks. This approach resulted in consistent enhancements,
+                                        contributing to a dynamic and evolving system.</p>
+                                </li>
+                                <li>
+                                    <p>Directly engaged with clients, proactively understanding their needs, and
+                                        delivering tailored solutions. This customer-centric approach ensured a high
+                                        level of satisfaction and repeated business engagements.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tech-stack tech-stack-exp-1">
+                        <h3 style="font-size: 24px ;color: rgb(195, 105, 255);">Tech stack</h3>
+                        <div class="tech-img">
+                            
+                            <img src="./assets/coding-icons/icon_backend.png" alt="Back-end icon" >
+                            <img src="./assets/coding-icons/icon-microservice.png" alt="Microservice icon" >
+                            <img src="./assets/coding-icons/icon_rset_apis.png" alt="REST API's" >
+                            <img src="./assets/coding-icons/icon_python.png" alt="Python icon" >
+                            <img src="./assets/coding-icons/icon_flask.png" alt="Falsk icon" >
+                            <img src="./assets/coding-icons/icon_sql.png" alt="SQL icon" >
+                            <img src="./assets/coding-icons/icon_postman.svg" alt="Postman icon" >
+
+                            <img src="./assets/coding-icons/icon_angular.png" alt="Angular icon" >
+                            <img src="./assets/coding-icons/317755_badge_html_html5_achievement_award_icon.png" alt="HTML5 icon">
+                            <img src="./assets/coding-icons/317756_badge_css_css3_achievement_award_icon.png" alt="CSS3 icon">
+                            <img src="./assets/coding-icons/icon_javascript.png" alt="JavaScript icon" >
+                            <img src="./assets/coding-icons/287725_github_icon.png" alt="Git icon" >
+                            <img src="./assets/coding-icons/icon_bibucket.png" alt="Bitbucket icon" >
+                            <img src="./assets/coding-icons/icon_openshift.png" alt="Openshif icon" >
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="project exp-2">
+                        <div class="project-info">
+                            <h3 style="font-size: 24px ;color: rgb(195, 105, 255);">Python Automation Developer (TCS).
+                            </h3>
+                            <ul>
+                                <li>
+                                    <p>Developed and implemented an automated workflow using Python Flask and Pandas to
+                                        replace a previously manual process, resulting in a remarkable 95% increase in
+                                        productivity.</p>
+                                </li>
+                                <li>
+                                    <p>Designed and implemented a user-friendly dashboard using Angular, providing
+                                        real-time insights and enhancing overall visibility into the automated process,
+                                        contributing to the significant boost in operational efficiency.</p>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <div class="tech-stack tech-stack-exp-2">
+                        <h3 style="font-size: 24px ;color: rgb(195, 105, 255);">Tech stack</h3>
+                        <div class="tech-img">
+                            <img src="./assets/coding-icons/icon_backend.png" alt="Back-end icon" >
+                            <img src="./assets/coding-icons/icon-microservice.png" alt="Microservice icon" >
+                            <img src="./assets/coding-icons/icon_rset_apis.png" alt="REST API's" >
+                            <img src="./assets/coding-icons/icon_python.png" alt="Python icon" >
+                            <img src="./assets/coding-icons/icon_flask.png" alt="Falsk icon" >
+                            <img src="./assets/coding-icons/icon_sql.png" alt="SQL icon" >
+                            <img src="./assets/coding-icons/icon_postman.svg" alt="Postman icon" >
+                            <img src="./assets/coding-icons/287725_github_icon.png" alt="Git icon" >
+                            <img src="./assets/coding-icons/icon_bibucket.png" alt="Bitbucket icon" >
+                            <img src="./assets/coding-icons/icon_openshift.png" alt="Openshif icon" >
+                        </div>
+
+                    </div>
+
+                    <div class="project exp-3">
+                        <div class="project-info">
+                            <h3 style="font-size: 24px ;color: rgb(195, 105, 255);">Java Spring Boot Backend Developer (TCS).
+                            </h3>
+                            <ul>
+                                <li>
+                                    <p>Developed and implemented complex APIs using Java Spring Boot, demonstrating
+                                        proficiency in designing and building robust backend systems.</p>
+                                </li>
+                                <li>
+                                    <p>Collaborated with cross-functional teams to understand project requirements and
+                                        deliver tailored Java Spring Boot solutions. Fostered effective communication
+                                        between backend and frontend teams to ensure seamless integration and project
+                                        success.</p>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <div class="tech-stack tech-stack-exp-3">
+                        <h3 style="font-size: 24px ;color: rgb(195, 105, 255);">Tech stack</h3>
+                        <div class="tech-img">
+                            <img src="./assets/coding-icons/icon_backend.png" alt="Back-end icon" >
+                            <img src="./assets/coding-icons/icon-microservice.png" alt="Microservice icon" >
+                            <img src="./assets/coding-icons/icon_rset_apis.png" alt="REST API's" >
+                            <img src="./assets/coding-icons/icon_java.png" alt="Java icon" >
+                            <img src="./assets/coding-icons/icon_spring.png" alt="Spring Boot icon" >
+                            <img src="./assets/coding-icons/icon_sql.png" alt="SQL icon" >
+                            <img src="./assets/coding-icons/icon_postman.svg" alt="Postman icon" >
+
+                            <img src="./assets/coding-icons/icon_angular.png" alt="Angular icon" >
+                            <img src="./assets/coding-icons/317755_badge_html_html5_achievement_award_icon.png" alt="HTML5 icon">
+                            <img src="./assets/coding-icons/317756_badge_css_css3_achievement_award_icon.png" alt="CSS3 icon">
+                            <img src="./assets/coding-icons/icon_javascript.png" alt="JavaScript icon" >
+                            <img src="./assets/coding-icons/287725_github_icon.png" alt="Git icon" >
+                            <img src="./assets/coding-icons/icon_bibucket.png" alt="Bitbucket icon" >
+                            <img src="./assets/coding-icons/icon_openshift.png" alt="Openshif icon" >
+                            
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <br><br><br><br>
+
+                <br><br><br><br>
+
+
+                <h2>Education</h2>
+
+                <div class="education">
+                    <div class="edu show-card">
+                        <br>
+                        <div class="top">
+                            <h2 style="font-size: 3rem;">2018-2021</h2>
+                        </div>
+                        <br><br>
+                        <div class="edu-logo">
+                            <img src="./assets/sppu_logo.png" alt="SPPU Logo" class="logo-image">
+                        </div>
+                        <ul class="study">
+                            <li><b>Bachelor's of Engineering</b> </li>
+                            <li>Pune University</li>
+                            <li>CGPA: 9.33</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="edu show-card">
+                        <br>
+                        <div class="top">
+                            <h2 style="font-size: 3rem;">2016-2018</h2>
+                        </div>
+                        <br><br>
+                        <div class="edu-logo">
+                            <img src="./assets/Msbte-logo.png" alt="MSBTE Logo" class="logo-image">
+                        </div>
+                        <ul class="study">
+                            <li><b>Diploma Engineering</b> </li>
+                            <li>MSBTE University</li>
+                            <li>Percentage: 90.94</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <section class="projects wrapper" id="projects">
+                <h2>Top &nbsp;&nbsp;&nbsp; Projects</h2>
+
+                <div class="project-list">
+                    <div class="project project-1">
+                        <div class="project-info">
+                            <h3 style="font-size: 24px ;color: rgb(195, 105, 255);">Posture Corrector and Wrong Posture
+                                Alert Device.</h3>
+                            <p>"I developed a smart wearable posture corrector and alert device, along with an Android
+                                app
+                                for setting correct angles. Utilizing IoT and programming skills, I integrated Bluetooth
+                                connectivity for real-time data transfer. As the sole creator, I led the project from
+                                conception to execution."</p>
+                        </div>
+
+
+
+                    </div>
+                    <div class="tech-stack tech-stack-1">
+                        <h3 style="font-size: 24px ;color: rgb(195, 105, 255);">Tech stack</h3>
+                        <div class="tech-img">
+                            <p>Augmented Reality</p>
+                            <p>INO Programming</p>
+                            <p>ESP 32 Arduino</p>
+                            <p>Sensors</p>
+                        </div>
+
+                    </div>
+
+                    <div class="project project-2">
+                        <div class="project-info">
+                            <h3 style="font-size: 24px ;color: rgb(195, 105, 255);">IoT and AR Based Compound Pendulum
+                                System.</h3>
+                            <p>"Led a team to create an automatic system for the compound pendulum experiment. Using
+                                Augmented Reality and IoT, we found the Center of Gravity and Moment of Inertia. Built
+                                an
+                                Android app to track pendulum data in real-time. Also, developed virtual scenes for
+                                better
+                                visualization. As Team Leader and Head of IoT, I drove innovation and practical
+                                application." </p>
+                        </div>
+
+
+                    </div>
+                    <div class="tech-stack tech-stack-2">
+                        <h3 style="font-size: 24px ;color: rgb(195, 105, 255);">Tech stack</h3>
+                        <div class="tech-img">
+                            <p>Augmented Reality</p>
+                            <p>Python</p>
+                            <p>Unity</p>
+                            <p>Google Firebase</p>
+                            <p>Digital Twin</p>
+                            <p>Solidworks</p>
+                            <p>Raspberry Pi 4</p>
+                            <p>Sensors</p>
+                        </div>
+
+                    </div>
+
+                    <div class="project project-3">
+                        <div class="project-info">
+                            <h3 style="font-size: 24px ;color: rgb(195, 105, 255);">TOM Numerical and Graphical Analysis
+                                Software Development..</h3>
+                            <p> "I led a team in developing software to demystify the Theory of Machines, a
+                                traditionally
+                                challenging subject. Our solution tackles graphical and analytical problems, offering
+                                intuitive graphical representations for clarity. It excels in swiftly providing highly
+                                accurate Cam and Follower solutions, all within seconds. Leveraging Python and libraries
+                                like Tkinter, Matplotlib, and Numpy, we ensured both precision and efficiency."
+                            </p>
+                        </div>
+
+
+                    </div>
+                    <div class="tech-stack tech-stack-3">
+                        <h3 style="font-size: 24px ;color: rgb(195, 105, 255);">Tech stack</h3>
+                        <div class="tech-img ">
+                            <p>Python</p>
+                            <p>Tkinter</p>
+                            <p>Matplotlib Pi 4</p>
+                            <p>Pandas</p>
+                            <p>Numpy</p>
+                            
+                        </div>
+
+                    </div>
+
+                   
+
+                </div>
+
+
+                <!-- <button class="view-all"><a href="https://github.com/Shivajilaware052" target="_blank">View
+                        All</a></button> -->
+            </section>
+
+            <section class="social wrapper" id="social">
+                <h2>Social &nbsp;&nbsp;&nbsp; Presence</h2>
+                <div class="social-container">
+                    <div class="social-button linkedin">
+                        <a href="https://www.linkedin.com/in/shivaji-laware/" target="_blank" class="side"><i
+                                class="fa-brands fa-linkedin"></i>LinkedIn</a>
+                        <div class="side"></div>
+                        <div class="side"></div>
+                        <div class="side"></div>
+                        <div class="side"></div>
+                        <div class="side"></div>
+                    </div>
+                    <div class="social-button github">
+                        <a href="https://github.com/Shivajilaware052" target="_blank" class="side"><i
+                                class="fa-brands fa-github"></i>GitHub</a>
+                        <div class="side"></div>
+                        <div class="side"></div>
+                        <div class="side"></div>
+                        <div class="side"></div>
+                        <div class="side"></div>
+                    </div>
+                    <div class="social-button hackerrank">
+                        <a href="https://www.hackerrank.com/profile/lawareshivaji052" target="_blank" class="side"><i
+                                class="fa-brands fa-hackerrank"></i>hackerrank</a>
+                        <div class="side"></div>
+                        <div class="side"></div>
+                        <div class="side"></div>
+                        <div class="side"></div>
+                        <div class="side"></div>
+                    </div>
+                    <div class="social-button instagram">
+                        <a href="https://www.instagram.com/shivajilaware052/" target="_blank" class="side"><i
+                                class="fa-brands fa-instagram"></i>Instagram</a>
+                        <div class="side"></div>
+                        <div class="side"></div>
+                        <div class="side"></div>
+                        <div class="side"></div>
+                        <div class="side"></div>
+                    </div>
+
+
+
+
+
+                </div>
+            </section>
+
+            <section class="contact" id="contact">
+                <h2>Contact &nbsp;&nbsp;&nbsp; Me</h2>
+                <form id="my-form" class="form wrapper" action="https://formspree.io/f/mjvqvbyg" method="POST">
+                    <div class="contact-info">
+                        <label for="name" class="sr-only">Full name</label>
+                        <input type="text" name="name" id="name" placeholder="Full Name" required>
+                        <label for="email" class="sr-only">Email address</label>
+                        <input type="email" name="email" id="email" placeholder="Email address" required />
+                    </div>
+                    <div class="contact-message">
+                        <label for="message" class="sr-only">Message</label>
+                        <input type="text" name="message" id="message" placeholder="What can I do for you?" required />
+                    </div>
+                    <button id="my-form-button" type="submit" class="submit-button">Submit</button>
+                    <p id="my-form-status"></p>
+
+                </form>
+            </section>
+    </main>
+    <footer>
+        <div class="footer wrapper">
+            <div class="logo">
+                <p style="font-size: 40px;"> &lt;&gt; Shivaji Laware &lt;/&gt;</p>
+            </div>
+
+            <div class="signature-block">
+                <p style="font-size: 20px;font-weight: bold;    color: rgb(195, 105, 255);
+                ">Made by <a href="https://github.com/Shivajilaware052" target="_blank" class="signature" style="    color: rgb(195, 105, 255);
+">Shivaji
+                        Laware</a></p>
+                <p>Born in the Heart of IT Innovation</p>
+                <p>Thriving in Pune, India.</p>
+            </div>
+
+            <div class="footer-links">
+                <p style="font-size: 20px;font-weight: bold;     color: rgb(195, 105, 255);
+                ">Connect Me:</p>
+                <nav>
+                    <ul>
+                         
+                        <li><i class="fa fa-phone"></i><a>8806595204</a></li>
+                        <li><i class="fa fa-envelope"></i><a>lawareshivaji052@gmail.com</a></li>
+
+                        <li><i class="fa-brands fa-github"></i><a href="https://github.com/Shivajilaware052"
+                                target="_blank">GitHub</a></li>
+                        <li><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/shivaji-laware/"
+                                target="_blank">LinkedIn</a></li>
+                        <li><i class="fa-brands fa-hackerrank"></i><a
+                                href="https://www.hackerrank.com/profile/lawareshivaji052"
+                                target="_blank">HackerRank</a>
+                        </li>
+                        <li><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/shivajilaware052/"
+                                target="_blank">Instagram</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </footer>
+
+    <script type="module" src="./app.js"></script>
+</body>
+
+</html>
