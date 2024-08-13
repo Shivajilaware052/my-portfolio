@@ -390,10 +390,11 @@ a, button, input, textarea {
 
 
 .tech-content {
+    width: 90%;
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
     justify-content: flex-start; /* Align items to the start of the flex container */
-    padding-left: 50px; /* Adjust padding as needed */
+    padding-left: 20px; /* Adjust padding as needed */
 }
 
 .tech {
@@ -435,7 +436,7 @@ a, button, input, textarea {
 
 .edu {
     height: 400px;
-    width: 450px;
+    width: 400px;
     outline: 1px solid rgba(158, 105, 255, 0.8);
     /* outline: 1px solid white; */
     border-radius: 1rem;
@@ -1037,6 +1038,21 @@ iframe {
             flex-direction: column;
             align-items: center;
         }
+
+        .education{
+            display: flex;
+            gap: 25px;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .edu{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        
 
         .project, .tech-stack {
             width: 80%;
