@@ -25,7 +25,8 @@
                 <h2 style="font-size: 4rem; color: white;">MEET</h2>
                 <h2 style="font-size: 5rem;">SHIVAJI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LAWARE</h2>
 
-                <h2 id="typing-animation" style="color:white; white-space: nowrap;"></h2>
+                <h2 id="typing-animation" style="color:white; white-space: nowrap; height: 30px;"></h2>
+
             </div>
 
             <p style="color: white; margin-top: 50px; font-size: 2rem;font-weight: bold;">A Backend Developer
@@ -41,6 +42,8 @@
             // JavaScript code for typing animation
             const typingAnimationElement = document.getElementById('typing-animation');
             const typingTexts = ['Engineer  ', 'Coder   ', 'Innovator  '];
+            typingAnimationElement.textContent = '';
+
             function playTypingAnimation(text) {
                 for (let i = 0; i < text.length; i++) {
                     setTimeout(() => {
@@ -51,6 +54,10 @@
                     typingAnimationElement.textContent = '';
                     playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
                 }, text.length * 200);
+
+                typingAnimationElement.textContent = '';
+
+
             }
             playTypingAnimation(typingTexts[0]);
         </script>
