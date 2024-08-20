@@ -690,10 +690,11 @@ iframe {
 
 .tech-img {
     display: grid;
-    padding: 20px;
-    gap: 25px;
-    justify-content: center;
-    grid-template-columns: repeat(3, 1fr);
+    padding: 40px;
+    padding-top: 10px;
+    gap: 35px;
+    justify-content: space-around;
+    grid-template-columns: repeat(3, 0fr);
 }
 
 .tech-img img {
