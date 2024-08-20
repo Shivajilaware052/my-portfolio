@@ -393,8 +393,8 @@ a, button, input, textarea {
     width: 90%;
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
-    justify-content: flex-start; /* Align items to the start of the flex container */
-    padding-left: 20px; /* Adjust padding as needed */
+    justify-content: flex-start;
+    padding-left: 35px;
 }
 
 .tech {
